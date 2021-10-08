@@ -15,14 +15,17 @@ public class TesteCampoTreinamento {
 	
 	private WebDriver driver;
 	private DSL dsl;
+	private CampoTreinamentoPage page;
 	
 	@Before
 	public void inicializa() {
 		driver = new FirefoxDriver();
 		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
 		dsl = new DSL(driver);
+//		page = CampoTreinamentoPage(driver);
 	}
 	
+
 	@After
 	public void finaliza() {
 		driver.quit();
@@ -32,6 +35,7 @@ public class TesteCampoTreinamento {
 	@Test
 	public void testeTesteField() {
 		dsl.escreve("elementosForm:nome", "Teste de escrita");
+//		page.setNome("Teste de escrita");
 		Assert.assertEquals("Teste de escrita", dsl.obterValorCampo("elementosForm:nome"));	
 		
 	}
