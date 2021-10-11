@@ -1,17 +1,27 @@
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TestName;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class TesteCampoTreinamento {
+	
+	@Rule
+	public TestName testName = new TestName();
 	
 	private WebDriver driver;
 	private DSL dsl;
@@ -27,7 +37,11 @@ public class TesteCampoTreinamento {
 	
 
 	@After
-	public void finaliza() {
+	public void finaliza() throws IOException {
+		TakesScreenshot ss = (TakesScreenshot) driver;
+		File arquivo = ss.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(arquivo, new File ("target" + File.separator + "screenshot" + File.separator +
+				testName.getMethodName() + " .jpg"));
 		driver.quit();
 	}
 	
@@ -139,8 +153,8 @@ public class TesteCampoTreinamento {
 	@Test
 	public void deveBuscarTextosNaPagina() {
 		
-//		Assert.assertTrue(driver.findElement(By.tagName("body"))
-//				.getText().contains("Campo de Treinamento"));
+		Assert.assertTrue(driver.findElement(By.tagName("body"))
+				.getText().contains("Campo de Treinamento"));
 		
 		Assert.assertEquals("Campo de Treinamento", driver.findElement(By.tagName("h3")).getText());
 		
