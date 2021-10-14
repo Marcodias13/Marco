@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\User\eclipse-workspace\CursoSelenium\src\main\java\TesteCampoTreinamento.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -48,6 +49,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="CursoCucumber"/>
 			<item value="CursoSelenium"/>
 		</list>
 		<list key="projectNameTemplate">
