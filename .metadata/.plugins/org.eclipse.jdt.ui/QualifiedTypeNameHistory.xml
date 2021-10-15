@@ -13,9 +13,6 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
-    <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
     <fullyQualifiedTypeName name="org.junit.Rule"/>
     <fullyQualifiedTypeName name="org.junit.rules.TestName"/>
     <fullyQualifiedTypeName name="java.io.File"/>
@@ -29,11 +26,18 @@
     <fullyQualifiedTypeName name="cucumber.api.SnippetType"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.firefox.GeckoDriverService"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="java.sql.Driver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="org.junit.Assert"/>
     <fullyQualifiedTypeName name="cucumber.api.java.pt.Dado"/>
     <fullyQualifiedTypeName name="cucumber.api.java.pt.Quando"/>
     <fullyQualifiedTypeName name="cucumber.api.java.pt.Então"/>
+    <fullyQualifiedTypeName name="cucumber.api.java.Before"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="cucumber.api.java.After"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
+    <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+    <fullyQualifiedTypeName name="cucumber.api.Scenario"/>
 </qualifiedTypeNameHistroy>
